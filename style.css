@@ -19,10 +19,10 @@
 body {
     font-family: 'All-Round-Gothic' 'Segoe UI', sans-serif !important;
     background: #f1dff8;
+    /* overflow-x: hidden; */
 }
 
 html {
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -164,7 +164,7 @@ html {
     font-weight: 500;
 }
 
-#start-paying, #read-doc, #meet-partners {
+#start-paying, #read-doc, #meet-partners, #get-started {
     width: 251px;
 }
 
@@ -183,7 +183,7 @@ html {
     margin-bottom: 4rem;
 }
 
-.benefits span {
+.benefits span, .get-started span {
     color: #7230FF;
 }
 
@@ -326,3 +326,34 @@ html {
     background-position-x: right;
     background-position: 100% 50%; 
 } */
+
+.vertical {
+    border-left: 6px solid #7230FF;
+    height: 400px;
+    position: relative;
+    left: 50%;
+}
+
+.get-started {
+    margin-bottom: 12rem;
+}
+
+.get-started img {
+    width: 531px;
+    height: 391px;
+}
+
+.get-started h2 {
+    margin-top: 8rem;
+    font-family: 'All-Round-Gothic';
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.get-started-steps, .step-img {
+    margin-top: 1rem;
+}
+
+.step {
+    margin-bottom: 2rem;
+}
