@@ -103,7 +103,7 @@ html {
     height: 173px;
 }
 
-.section-2 {
+.other-sections {
     background-color: #000000;
     height: 525px;
 }
@@ -271,10 +271,51 @@ html {
     color: #ffffff;
 }
 
-.heading p {
+.text-heading {
+    margin-bottom: 6rem;
+}
+
+.text-heading p, .testimonials-content h2 {
     font-size: 47px;
     font-family: "All-Round-Gothic";
     text-align: center;
+}
+
+.testimonials-content h2 {
+    font-weight: bolder;
+    margin-bottom: 4rem;
+}
+
+.testimonials-content h2 span {
+    color: #7230FF;
+}
+
+.testimonials-text {
+    width: 378px;
+    height: 378px;
+    background: #0011ED;
+    color: #ffffff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    /* border-radius: 20px, 40px, 20px, 0px; */
+    padding: 40px;
+}
+
+.earth-scroll {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+}
+
+.earth-scroll-view {
+    flex: 0 0 auto !important;
+    margin-right: 3px !important;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
 }
 
 /* .digital {
