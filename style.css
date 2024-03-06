@@ -16,10 +16,14 @@
     src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-text.otf);
 }
 
+:root {
+    --font-family: 'All-Round-Gothic';
+}
+
 body {
     font-family: 'All-Round-Gothic' 'Segoe UI', sans-serif !important;
     background: #f1dff8;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 html {
@@ -35,7 +39,7 @@ html {
     background-size: contain;
 }
 
-#earth-logo img {
+.earth-logo img {
     width: 80px;
     height: 55px;
 }
@@ -348,6 +352,7 @@ html {
     font-family: 'All-Round-Gothic';
     font-weight: bolder;
     font-size: 48px;
+    font-family: ;
 }
 
 .get-started-steps, .step-img {
@@ -356,4 +361,46 @@ html {
 
 .step {
     margin-bottom: 2rem;
+}
+
+.footer {
+    background-color: #000000;
+    height: 600px;
+    margin-top: 14rem;
+}
+
+.footer-content {
+    padding-top: 5rem;
+}
+
+.footer-content h2 {
+    color: #7230FF;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 3rem;
+    font-family: var(--font-family);
+}
+
+.footer-content h2 span {
+    color: #ffffff;
+}
+
+hr {
+    margin-top: 8rem;
+    color: #ffffff;
+}
+
+.list .nav-item {
+    list-style-type: none;
+}
+
+.spacing {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
 }
