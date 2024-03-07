@@ -1,27 +1,23 @@
 @font-face {
-    font-family: 'All-Round-Gothic';
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-bold.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-boldoblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-book.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-xlig.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-bookoblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-demi.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-demioblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-lig.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-ligoblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-medium.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-mediumoblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-semi.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-semioblique.otf);
-    src: url(./assets/fonts/Fontspring-DEMO-allroundgothic-text.otf);
+    font-family: 'AllRoundGothic';
+    src: url(./assets/fonts/AllRoundGothic-Bold.ttf);
+    src: url(./assets/fonts/AllRoundGothic-BoldOblique.ttf);
+    src: url(./assets/fonts/AllRoundGothic-Book.ttf);
+    src: url(./assets/fonts/AllRoundGothic-BookOblique.ttf);
+    src: url(./assets/fonts/AllRoundGothic-Demi.ttf);
+    src: url(./assets/fonts/AllRoundGothic-DemiOblique.ttf);
+    src: url(./assets/fonts/AllRoundGothic-Medium.ttf);
+    src: url(./assets/fonts/AllRoundGothic-MediumOblique.ttf);
+    src: url(./assets/fonts/AllRoundGothic-XLig.ttf);
+    src: url(./assets/fonts/AllRoundGothic-XLigOblique.ttf);
 }
 
 :root {
-    --font-family: 'All-Round-Gothic';
+    --font-family: 'AllRoundGothic';
 }
 
 body {
-    font-family: 'All-Round-Gothic' 'Segoe UI', sans-serif !important;
+    font-family: 'AllRoundGothic' 'Segoe UI', sans-serif !important;
     background: #f1dff8;
     overflow-x: hidden;
 }
@@ -85,7 +81,7 @@ html {
 
 .main-heading {
     margin-top: 5rem;
-    font-family: 'All-Round-Gothic';
+    font-family: 'AllRoundGothic';
     font-weight: lighter;
     font-size: 68px;
     line-height: 80px;
@@ -133,8 +129,8 @@ html {
 
 .content-1 h2 {
     margin-bottom: 4rem;
-    font-family: 'All-Round-Gothic';
-    font-weight: 700;
+    font-family: 'AllRoundGothic';
+    font-weight: 900;
     font-size: 48px;
     color: #7230FF;
 }
@@ -152,11 +148,15 @@ html {
 .card-info {
     background: #ffffff;
     box-shadow: 0px 4px 37px 0px #00000008;
-    width: 604px;
+    width: 100%;
     height: 142px;
     border-radius: 10px;
     margin-bottom: 1rem;
     padding: 20px;
+}
+
+.mobile-button {
+    display: none;
 }
 
 .easy-reg {
@@ -181,7 +181,7 @@ html {
 
 .benefits h2 {
     margin-top: 9rem;
-    font-family: 'All-Round-Gothic';
+    font-family: 'AllRoundGothic';
     font-weight: bolder;
     font-size: 48px;
     margin-bottom: 4rem;
@@ -215,7 +215,7 @@ html {
 
 .developer-1 h2 {
     font-size: 48px;
-    font-family: 'All-Round-Gothic';
+    font-family: 'AllRoundGothic';
     font-weight: bolder;
 }
 
@@ -227,7 +227,7 @@ html {
 
 .our-partners h2 {
     margin-top: 5rem;
-    font-family: 'All-Round-Gothic';
+    font-family: 'AllRoundGothic';
     font-weight: bolder;
     font-size: 48px;
     margin-bottom: 1rem;
@@ -307,21 +307,6 @@ html {
     padding: 40px;
 }
 
-.earth-scroll {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-}
-
-.earth-scroll-view {
-    flex: 0 0 auto !important;
-    margin-right: 3px !important;
-}
-
-::-webkit-scrollbar {
-    display: none !important;
-}
-
 /* .digital {
     margin-top: 12rem;
     background-image: url(/assets/img/earth-2.png);
@@ -352,7 +337,6 @@ html {
     font-family: 'All-Round-Gothic';
     font-weight: bolder;
     font-size: 48px;
-    font-family: ;
 }
 
 .get-started-steps, .step-img {
@@ -403,4 +387,81 @@ hr {
     width: 24px;
     height: 24px;
     margin-left: 10px;
+}
+
+/* Mobile styling */
+
+@media only screen and (min-width: 300px) and (max-width: 420px) {
+    /* .hero-section {
+        background-color: #000000;
+        height: 805px;
+        background-image: url(./assets/img/bg-image.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 250px 700px;
+    } */
+
+    .other-sections {
+        height: 800px;
+    }
+
+    .cta img, .cta {
+        display: none;
+    }
+
+    .testimony img {
+        width: 100%;
+    }
+
+    .content-1 h2 {
+        margin-top: 12rem;
+    }
+
+    .earth-scroll {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+    }
+    
+    .earth-scroll-view {
+        flex: 0 0 auto !important;
+        margin-right: 3px !important;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .img-1 {
+        width: 331px;
+        height: 359px;
+        border-radius: 10px;
+    }
+
+    .img-2 {
+      display: none;
+    }
+
+    .content-2 {
+        margin-left: 0;
+        margin-top: 1rem;
+    } 
+    
+    .content-2 p {
+        line-height: 35px;
+    }
+    
+
+    .mobile-button {
+        display: block;
+    }
+
+    #start-paying {
+        display: none;
+    }
+
+    .boost-your-business, .testimonials {
+        flex-direction: column !important;
+    }
 }
